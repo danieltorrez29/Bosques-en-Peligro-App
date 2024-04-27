@@ -1,0 +1,49 @@
+.about-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.about-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden; /* Oculta el desbordamiento de las imágenes */
+}
+
+.shields {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* Ancho total de las imágenes */
+    margin-left: -100px; /* Ajuste para centrar las imágenes horizontalmente */
+}
+
+.shield {
+    width: 150px; /* Tamaño de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.content {
+    padding-left: 120px; /* Ajuste de margen para acomodar las imágenes */
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

@@ -1,0 +1,45 @@
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    width: calc(33.33% - 20px); /* Ajusta el ancho de las tarjetas */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-info {
+    padding: 15px;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    color: #666;
+  }
+  
+  .project-link {
+    display: inline-block;
+    color: #468b48;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .project-link:hover {
+    color: #2c6d36;
+  }
+  

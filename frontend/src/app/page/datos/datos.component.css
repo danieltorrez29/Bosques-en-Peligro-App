@@ -1,0 +1,29 @@
+main {
+    padding: 20px;
+}
+
+.data-table,
+.data-stats {
+    margin-bottom: 40px;
+}
+
+.data-table h2,
+.data-stats h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #2E8B57;
+    color: #fff;
+}

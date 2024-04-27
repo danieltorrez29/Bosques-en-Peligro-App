@@ -1,0 +1,39 @@
+.header {
+    background-color: #fff; /* Color de fondo */
+    padding: 20px 0; /* Espaciado interno */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto; /* Centrar el contenido */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo img {
+    max-width: 400px; /* Ajusta el tamaño máximo del logotipo */
+}
+
+.nav ul {
+    list-style-type: none; /* Quita los estilos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #468b48; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: font-size 0.3s; /* Transición suave al cambiar el tamaño de fuente */
+}
+
+.nav ul li a:hover {
+    color: #1bbe26; /* Cambia el color al pasar el ratón por encima */
+}

@@ -1,0 +1,24 @@
+.slider-container {
+    height: 25vh; /* Establece el alto del contenedor al 25% del alto de la ventana */
+    display: flex; /* Utiliza flexbox para alinear los sliders horizontalmente */
+    overflow: hidden; /* Oculta el desbordamiento de contenido */
+}
+
+.slider {
+    width: 25%; /* Establece el ancho del slider al 100% del contenedor */
+    overflow: hidden; /* Oculta el desbordamiento de contenido */
+    white-space: nowrap; /* Evita que los sliders se rompan en varias líneas */
+}
+
+.slide, .slide1, .slide2, .slide3 {
+    display: none; /* Oculta todas las imágenes por defecto */
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de las imágenes al 100% del contenedor */
+    opacity: 0; /* Oculta las imágenes por defecto */
+    transition: opacity 1s ease; /* Agrega una transición suave */
+}
+
+.slide.active, .slide1.active, .slide2.active, .slide3.active {
+    display: block; /* Muestra la imagen activa */
+    opacity: 1; /* Muestra las imágenes activas */
+}
