@@ -2,9 +2,7 @@
   <a href="" rel="noopener">
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
-
-<h3 align="center">Project Title</h3>
-
+<h3 align="center">Foro App</h3>
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -16,7 +14,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Proyecto para la gestión de foros con usuarios y temas, utilizando Spring Boot y MongoDB.
     <br> 
 </p>
 
@@ -34,50 +32,48 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Este proyecto tiene como propósito proporcionar una plataforma de foros donde los usuarios puedan crear y gestionar temas. Utiliza Spring Boot para el backend y MongoDB como base de datos.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas. Consulta la sección de deployment para saber cómo desplegar el proyecto en un sistema en vivo.
 ### Prerequisites
 
-What things you need to install the software and how to install them.
-
+Necesitas instalar los siguientes softwares:
 ```
-Give examples
+Java 11 o superior
+Maven
+MongoDB
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+Pasos para obtener un entorno de desarrollo en funcionamiento:
 
 ```
-Give the example
+1. Clona el repositorio
+https://github.com/danieltorrez29/Bosques-en-Peligro-App
+```
+2.Navega al directorio del proyecto
+cd tu-repositorio
+```
+3. Compila el proyecto usando Maven
+mvn clean install
+4. ejecuta la app
+mvn spring-boot:run
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
+cómo ejecutar las pruebas automatizadas para este sistema.
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
+jumm
 ```
-Give an example
+mvn test
 ```
-
 ### And coding style tests
 
 Explain what these tests test and why
@@ -87,9 +83,30 @@ Give an example
 ```
 
 ## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
+Notas sobre como usar el sistema.
+__________Crear un Usuario_____________
+URL: http://localhost:8080/usuarios
+Method: POST
+Headers: Content-Type: application/json
+Body:
+json
+{
+    "nombre": "Usuario 1",
+    "correo": "usuario1@example.com",
+    "contrasena": "password123"
+}
+Crear un Tema con Usuario
+URL: http://localhost:8080/temas
+Method: POST
+Headers: Content-Type: application/json
+Body:
+json
+{
+    "nombre": "Tema 1",
+    "usuario": {
+        "id_usuario": "ID_DEL_USUARIO_EXISTENTE"
+    }
+}
 ## 🚀 Deployment <a name = "deployment"></a>
 
 Add additional notes about how to deploy this on a live system.
