@@ -1,4 +1,4 @@
-package Model;
+package BackEndBosques.Foro.Model;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;

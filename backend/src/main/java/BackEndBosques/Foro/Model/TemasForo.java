@@ -1,4 +1,4 @@
-package Model;
+package BackEndBosques.Foro.Model;
 
 import org.springframework.data.annotation.Id;
 
