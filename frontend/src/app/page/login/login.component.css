@@ -46,10 +46,16 @@
   text-align: center;
   color: #666;
   font-size: 14px;
+  margin-top: 10px;
 }
 
 /* Estilos para el enlace de "Olvidé la contraseña" cuando se pasa el ratón por encima */
-.forgot-password:hover {
+.forgot-password a {
+  color: #666;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
   color: #333;
   text-decoration: underline;
 }

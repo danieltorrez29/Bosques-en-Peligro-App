@@ -1,19 +1,44 @@
+/* Estilos para la sección de noticias */
+
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .news {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 article {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 article h2 {
-    margin-top: 0;
+  margin-top: 0;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+article p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+article a {
+  color: #468b48;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: #2c6d36;
 }

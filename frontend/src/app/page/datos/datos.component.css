@@ -1,29 +1,50 @@
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .data-table,
 .data-stats {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .data-table h2,
 .data-stats h2 {
-    margin-top: 0;
+  margin-top: 0;
+  color: #468b48;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
 
 table th,
 table td {
-    padding: 10px;
-    border: 1px solid #ccc;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
 table th {
-    background-color: #2E8B57;
-    color: #fff;
+  background-color: #2e8b57;
+  color: #fff;
+}
+
+.data-stats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.data-stats ul li {
+  margin-bottom: 10px;
+}
+
+.data-stats ul li strong {
+  display: inline-block;
+  width: 200px;
 }

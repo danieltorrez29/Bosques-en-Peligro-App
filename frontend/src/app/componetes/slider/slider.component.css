@@ -1,24 +1,43 @@
-.slider-container {
-    height: 25vh; /* Establece el alto del contenedor al 25% del alto de la ventana */
-    display: flex; /* Utiliza flexbox para alinear los sliders horizontalmente */
-    overflow: hidden; /* Oculta el desbordamiento de contenido */
-}
-
-.slider {
-    width: 25%; /* Establece el ancho del slider al 100% del contenedor */
-    overflow: hidden; /* Oculta el desbordamiento de contenido */
-    white-space: nowrap; /* Evita que los sliders se rompan en varias líneas */
-}
-
 .slide, .slide1, .slide2, .slide3 {
-    display: none; /* Oculta todas las imágenes por defecto */
-    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
-    height: 100%; /* Ajusta la altura de las imágenes al 100% del contenedor */
-    opacity: 0; /* Oculta las imágenes por defecto */
-    transition: opacity 1s ease; /* Agrega una transición suave */
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease; /* Transición suave de opacidad */
 }
 
 .slide.active, .slide1.active, .slide2.active, .slide3.active {
-    display: block; /* Muestra la imagen activa */
-    opacity: 1; /* Muestra las imágenes activas */
+  display: block;
+  opacity: 1;
+}
+
+.slider-container {
+  max-width: 800px; /* Ancho máximo del contenedor del slider */
+  width: 100%; /* Asegura que el slider ocupe el 100% del ancho disponible */
+  height: 400px; /* Altura fija del contenedor del slider */
+  overflow: hidden; /* Oculta el desbordamiento de contenido */
+  border: 1px solid #ccc; /* Borde opcional para el contenedor */
+  margin: 0 auto; /* Centra el slider horizontalmente */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease; /* Agrega transición suave al desplazamiento */
+}
+
+.slide {
+  width: 100%; /* Ajusta el ancho de las imágenes al 100% del slider */
+  height: 100%; /* Ajusta la altura de las imágenes al 100% del slider */
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio del slide */
+}
+
+.slide.active {
+  opacity: 1; /* Muestra el slide activo */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+  .slider-container {
+      height: 250px; /* Reduce la altura del slider para dispositivos móviles */
+  }
 }

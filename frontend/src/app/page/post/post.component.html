@@ -1,28 +1,44 @@
 <app-header></app-header>
 <app-slider></app-slider>
-<main>
+
+<div class="article-container">
   <article>
     <header>
-      <h2>Título del Artículo</h2>
-      <p>Fecha de Publicación: <time datetime="2024-04-27">27 de Abril de 2024</time></p>
+      <h2>Impacto de la Deforestación en el Medio Ambiente</h2>
+      <p>Fecha de Publicación: <time datetime="2024-06-15">15 de Junio de 2024</time></p>
     </header>
     <section>
-      <p>Contenido del artículo...</p>
-      <p>Más contenido...</p>
-      <img src="imagen.jpg" alt="Descripción de la imagen">
-      <p>Otro párrafo...</p>
+      <p>La deforestación es uno de los mayores problemas ambientales que enfrenta nuestro planeta en la actualidad. Este proceso de pérdida de bosques y áreas arboladas tiene consecuencias devastadoras para la biodiversidad, el clima y las comunidades locales.</p>
+
+      <p>Los bosques tropicales, en particular, albergan una inmensa variedad de especies vegetales y animales. La deforestación provoca la pérdida de hábitats cruciales para la supervivencia de estas especies, lo que conduce a la extinción de muchas de ellas. Además, la reducción de la cubierta forestal disminuye la capacidad de los bosques para absorber dióxido de carbono (CO2), uno de los principales gases de efecto invernadero responsables del cambio climático.</p>
+
+      <img src="http://lademajagua.cu/wp-content/uploads/2024/06/forestal-680x398.jpg" alt="Impacto de la Deforestación">
+
+      <p>En términos socioeconómicos, la deforestación también tiene un impacto significativo. Las comunidades locales que dependen de los recursos forestales para su subsistencia, como el agua limpia, los alimentos y los medicamentos naturales, se ven gravemente afectadas. Además, la pérdida de bosques contribuye a la desertificación del suelo y la erosión, lo que aumenta la vulnerabilidad de las poblaciones locales a los desastres naturales como inundaciones y deslizamientos de tierra.</p>
+
+      <p>Es crucial implementar medidas efectivas de conservación y reforestación para revertir los efectos devastadores de la deforestación. La creación de áreas protegidas, el fomento de prácticas agrícolas sostenibles y la educación ambiental son algunos de los pasos necesarios para preservar nuestros bosques y garantizar un futuro sostenible para las generaciones venideras.</p>
     </section>
     <footer>
       <div class="interactions">
-        <button class="like-btn">Me gusta</button>
-        <button class="comment-btn">Comentar</button>
+        <button class="like-btn" (click)="likeArticle()">Me gusta <span>{{ likeCount }}</span></button>
+        <button class="comment-btn" (click)="toggleComments()">Comentar <span>{{ comments.length }}</span></button>
       </div>
-      <div class="comments">
-        <!-- Aquí se insertarán los comentarios -->
+      <div class="comments" *ngIf="showComments">
+        <!-- Mostrar los comentarios existentes -->
+        <div class="comment" *ngFor="let comment of comments">
+          <p>{{ comment }}</p>
+        </div>
+
+        <!-- Formulario para agregar un nuevo comentario -->
+        <form (submit)="addComment()">
+          <textarea [(ngModel)]="newComment" name="newComment" placeholder="Escribe tu comentario..."></textarea>
+          <button type="submit">Agregar Comentario</button>
+        </form>
       </div>
     </footer>
   </article>
 
   <!-- Puedes agregar más artículos aquí si deseas -->
-</main>
+</div>
+
 <app-footer></app-footer>

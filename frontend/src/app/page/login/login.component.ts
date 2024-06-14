@@ -6,6 +6,7 @@ import { SliderComponent } from '../../componetes/slider/slider.component';
 import { SliderModule } from '../../componetes/slider/slider.module';
 import { AcercaDeComponent } from '../../componetes/acerca-de/acerca-de.component';
 import { ProyectosComponent } from '../../componetes/proyectos/proyectos.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -13,11 +14,30 @@ import { ProyectosComponent } from '../../componetes/proyectos/proyectos.compone
   imports: [
     CommonModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    FormsModule
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  username: string = '';
+  password: string = '';
+
+  constructor() { }
+
+  login() {
+    // Aquí puedes implementar la lógica de autenticación
+    console.log('Username:', this.username);
+    console.log('Password:', this.password);
+
+    // Ejemplo básico de validación de usuario y contraseña (¡No usar en producción!)
+    if (this.username === 'usuario' && this.password === 'password') {
+      alert('Inicio de sesión exitoso');
+      // Aquí podrías redirigir a otra página después del login exitoso
+    } else {
+      alert('Usuario o contraseña incorrectos');
+    }
+  }
 
 }

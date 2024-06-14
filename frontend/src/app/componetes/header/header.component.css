@@ -1,39 +1,34 @@
+/* Header Custom Styles */
 .header {
-    background-color: #fff; /* Color de fondo */
-    padding: 20px 0; /* Espaciado interno */
+  background-color: #f8f9fa;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto; /* Centrar el contenido */
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos */
+.navbar-brand img {
+  max-width: 200px; /* Ajusta el tamaño máximo del logotipo */
 }
 
-.logo img {
-    max-width: 400px; /* Ajusta el tamaño máximo del logotipo */
+.nav-link {
+  color: #468b48;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
-.nav ul {
-    list-style-type: none; /* Quita los estilos de lista */
-    margin: 0;
-    padding: 0;
+.nav-link:hover {
+  color: #1bbe26;
 }
 
-.nav ul li {
-    display: inline-block; /* Muestra los elementos en línea */
-    margin-right: 20px; /* Espacio entre elementos */
+.form-control {
+  width: 250px;
 }
 
-.nav ul li a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #468b48; /* Color del texto */
-    font-weight: bold; /* Negrita */
-    font-size: 18px; /* Tamaño de fuente */
-    transition: font-size 0.3s; /* Transición suave al cambiar el tamaño de fuente */
+.btn-outline-success {
+  color: #468b48;
+  border-color: #468b48;
 }
 
-.nav ul li a:hover {
-    color: #1bbe26; /* Cambia el color al pasar el ratón por encima */
+.btn-outline-success:hover {
+  background-color: #1bbe26;
+  border-color: #1bbe26;
+  color: white;
 }
