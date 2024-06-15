@@ -1,8 +1,9 @@
 package BackEndBosques.Foro.Repositorios;
-import BackEndBosques.Foro.Model.Publicacion;
+
+import BackEndBosques.Foro.Model.Region;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RepositorioPublicacion extends MongoRepository<Publicacion,String> {
+public interface RepositorioRegion extends MongoRepository<Region, String> {
 }

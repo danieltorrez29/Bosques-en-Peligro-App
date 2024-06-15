@@ -1,5 +1,6 @@
 package BackEndBosques.Foro.Model;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -7,8 +8,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 
 @Data
-@Document()
-public class RespuetasForo {
+@NoArgsConstructor
+@Document(collection = "RespuestasForo")
+public class RespuestasForo {
     @Id
     private String id_respuesta;
     @DBRef
@@ -16,7 +18,7 @@ public class RespuetasForo {
     private String contenido;
     private Date fecha;
 
-    public RespuetasForo(Publicacion publicacion, String contenido, Date fecha) {
+    public RespuestasForo(Publicacion publicacion, String contenido, Date fecha) {
         this.publicacion = publicacion;
         this.contenido = contenido;
         this.fecha = fecha;

@@ -1,6 +1,8 @@
 package BackEndBosques.Foro.Repositorios;
-import BackEndBosques.Foro.Model.RespuetasForo;
+import BackEndBosques.Foro.Model.RespuestasForo;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface RepositorioRespuesta extends MongoRepository<RespuetasForo,String>{
+@Repository
+public interface RepositorioRespuesta extends MongoRepository<RespuestasForo,String>{
 }
