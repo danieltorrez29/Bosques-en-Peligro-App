@@ -11,6 +11,7 @@ public class Usuario {
     @Id
     private String id_usuario;
     private String nombre;
+<<<<<<< HEAD
     private String telefono;
     private String correo;
     private String contrasena;
@@ -18,11 +19,31 @@ public class Usuario {
     public Usuario( String nombre, String telefono, String correo, String contrasena) {
         this.nombre= nombre;
         this.telefono = telefono;
+=======
+    //arreglo usuario
+    //
+    private String numero;
+    private String correo;
+    private String contrasena;
+    public Usuario( String nombre,String numero, String correo, String contrasena) {
+        this.nombre= nombre;
+        this.numero=numero;
+>>>>>>> 0bb3f7c053d0cfbd1facc6a70eebcd025f90da2b
         this.correo = correo;
         this.contrasena = contrasena;
     }
+
     public String getId() {return id_usuario;}
     public String getNombre(){return nombre;}
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
     public void setNombre(String nombre) {this.nombre   =nombre;}
     public String getCorreo() {
         return correo;
@@ -43,7 +64,7 @@ public class Usuario {
     public String getContrasena() {
         return contrasena;
     }
-
+//s
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
