@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div class="container mt-5 formulario">
+  <h2>Registro de Usuario</h2>
+  <form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+    <div class="mb-3">
+      <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+      <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" ngModel required>
+    </div>
+    <div class="mb-3">
+      <label for="telefono" class="form-label">Teléfono</label>
+      <input type="tel" class="form-control" id="telefono" name="telefono" ngModel required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo Electrónico</label>
+      <input type="email" class="form-control" id="email" name="email" ngModel required>
+    </div>
+    <div class="mb-3">
+      <label for="contrasena" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="contrasena" name="contrasena" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+  </form>
+</div>
+
+<app-footer></app-footer>
+

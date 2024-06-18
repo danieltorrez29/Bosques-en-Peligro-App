@@ -50,6 +50,7 @@ public class ControladorUsuario {
         if (optionalUsuario.isPresent()) {
             Usuario usuarioActual = optionalUsuario.get();
             usuarioActual.setNombre(infoUsuario.getNombre());
+            usuarioActual.setTelefono(infoUsuario.getTelefono());
             usuarioActual.setCorreo(infoUsuario.getCorreo());
             usuarioActual.setContrasena(convertirSHA256(infoUsuario.getContrasena()));
             return this.miRepositorioUsuario.save(usuarioActual);

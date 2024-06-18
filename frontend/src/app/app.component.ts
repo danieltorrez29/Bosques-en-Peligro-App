@@ -9,6 +9,8 @@ import { ProyectosComponent } from './page/proyectos/proyectos.component';
 import { PostComponent } from './page/post/post.component';
 import { LoginComponent } from './page/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { RegistroComponent } from './page/registro/registro.component';
+
 
 @Component({
   selector: 'app-root',
@@ -23,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     PostComponent,
     LoginComponent,
     FooterComponent,
-    FormsModule
+    FormsModule,
+    RegistroComponent 
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

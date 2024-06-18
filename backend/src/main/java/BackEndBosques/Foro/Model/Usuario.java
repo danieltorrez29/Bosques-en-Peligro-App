@@ -11,10 +11,13 @@ public class Usuario {
     @Id
     private String id_usuario;
     private String nombre;
+    private String telefono;
     private String correo;
     private String contrasena;
-    public Usuario( String nombre, String correo, String contrasena) {
+
+    public Usuario( String nombre, String telefono, String correo, String contrasena) {
         this.nombre= nombre;
+        this.telefono = telefono;
         this.correo = correo;
         this.contrasena = contrasena;
     }
@@ -23,6 +26,14 @@ public class Usuario {
     public void setNombre(String nombre) {this.nombre   =nombre;}
     public String getCorreo() {
         return correo;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public void setCorreo(String correo) {

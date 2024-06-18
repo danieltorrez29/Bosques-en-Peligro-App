@@ -1,0 +1,74 @@
+/* Estilos generales para el contenedor del formulario de registro */
+.register-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Color de fondo opcional */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilos para el formulario de registro */
+  .register-form {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para las etiquetas */
+  .register-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Color de texto para las etiquetas */
+  }
+  
+  /* Estilos para los campos de entrada */
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    width: calc(100% - 16px); /* Considera el padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para incluir el padding y el borde en el ancho total */
+    font-size: 14px; /* Tamaño de fuente opcional */
+  }
+  
+  /* Estilos para el botón de enviar */
+  .register-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Hacer que el botón sea de tipo bloque para ocupar todo el ancho disponible */
+  }
+  
+  .register-form input[type="submit"]:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón */
+  }
+  
+  /* Estilos para el enlace de "Olvidé la contraseña" */
+  .forgot-password {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el enlace de "Olvidé la contraseña" cuando se pasa el ratón por encima */
+  .forgot-password a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  
+  
