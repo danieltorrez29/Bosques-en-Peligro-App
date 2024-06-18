@@ -8,6 +8,7 @@ import { AcercaDeComponent } from '../../componetes/acerca-de/acerca-de.componen
 import { ProyectosComponent } from '../../componetes/proyectos/proyectos.component';
 
 
+
 @Component({
   selector: 'app-home',
   standalone: true,

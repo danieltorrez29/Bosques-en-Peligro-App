@@ -5,6 +5,8 @@ import { DatosComponent } from './page/datos/datos.component';
 import { ProyectosComponent } from './page/proyectos/proyectos.component';
 import { PostComponent } from './page/post/post.component';
 import { LoginComponent } from './page/login/login.component';
+import { RegistroComponent } from './page/registro/registro.component';
+
 
 
 export const routes: Routes = [
@@ -31,5 +33,11 @@ export const routes: Routes = [
     {
         path: 'login', 
         component: LoginComponent 
-    }, 
+    },
+    {
+        path: 'registro', 
+        component: RegistroComponent
+    }
+  
 ];
+
